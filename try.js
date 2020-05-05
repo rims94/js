@@ -1,5 +1,42 @@
-let A4 = "hiiiiii guys";
-let A2 = "hiii guys";
-let multipleA = /hi{4,6} guys/;
-console.log(multipleA.test(A4)); // Returns true
-console.log(multipleA.test(A2)); // Returns false
+const routine = [
+	{
+		job: 'brush',
+		status: 'done'
+	},
+	{
+		job: 'have breakfast',
+		status: 'done'
+	},
+	{
+		job: 'do coding',
+		status: 'done'
+	},
+	{
+		job: 'have lunch',
+		status: 'not done'
+	},
+	{
+		job: 'take a nap',
+		status: 'not done'
+	},
+	{
+		job: 'do code again',
+		status: 'not done'
+	},
+	{
+		job: 'have dinner',
+		status: 'not done'
+	},
+	{
+		job: 'sleep',
+		status: 'not done'
+	}
+];
+
+let checkStatus = routine.filter((task) => {
+	if (task.status === 'not done') {
+		console.log(task.job);
+	}
+	// return task.status === 'not done';
+});
+console.log(checkStatus);
