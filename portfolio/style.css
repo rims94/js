@@ -54,8 +54,16 @@ h6 {
 #row2 {
 	background-color: cornflowerblue;
 }
-.scnd table {
-	width: 1000px;
-	max-width: 100%;
-	background-color: aqua;
+
+.scnd {
+	height: fit-content;
+}
+
+.third {
+	box-shadow: 10px 12px 15px rgba(0, 0, 0, 0.3);
+	height: 180px;
+}
+
+.skl {
+	margin: 15px;
 }
